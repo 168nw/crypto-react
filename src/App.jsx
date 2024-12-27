@@ -1,24 +1,12 @@
 import React from 'react';
-import {Layout } from 'antd';
-import AppHeader from './component/layout/AppHeader';
-import AppSlider from './component/layout/AppSider';
-import AppContent from './component/layout/AppContent';
 import { CryptoContextProvider } from './component/contex/CryptoContext.jsx';
+import AppLayout from './component/layout/AppLayout.jsx';
 
 
 
 const App = () => (
  <CryptoContextProvider>
- <Layout>
-  <AppHeader/>
-    <Layout>
-      <AppSlider/>
-      <AppContent/>
-      </Layout>
-  </Layout>
+    <AppLayout/>
  </CryptoContextProvider>
-
-
-
 );
 export default App;
